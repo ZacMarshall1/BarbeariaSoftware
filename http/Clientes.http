@@ -1,0 +1,28 @@
+POST /BarbeariaContext/Clientes
+Content-Type: application/json
+
+{
+    "Nome": "Maria Oliveira",
+    "CPF": "789.123.456-20",
+    "Telefone": "(41) 99876-5432",
+    "DataNascimento": "1990-05-15",
+    "Email": "maria@email.com"
+}
+
+GET /BarbeariaContext/Clientes
+
+GET /BarbeariaContext/Clientes/{id}
+
+PUT /BarbeariaContext/Clientes/{id}
+Content-Type: application/json
+
+{
+    "IdCliente": 12,
+    "Nome": "Guilherme Souza",
+    "CPF": "987.654.321-20",
+    "Telefone": "(41) 98765-4321",
+    "DataNascimento": "15-05-1990",
+    "Email": "Guilherme12@gmail.com"
+}
+
+DELETE /BarbeariaContext/clientes/{id}

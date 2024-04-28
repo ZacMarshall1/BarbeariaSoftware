@@ -13,6 +13,6 @@ class BarbeariaContext : DbContext
 
     protected override void OnConfiguring(DbContextOptionsBuilder builder)
     {
-        builder.UseMySql("server=localhost;port=3306;user=root;password=1204;database=barbearia;");
+        builder.UseMySql("server=localhost;port=3306;user=root;password=1204;database=localhost;");
     }
 }

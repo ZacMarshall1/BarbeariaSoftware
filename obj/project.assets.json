@@ -2334,19 +2334,19 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\ADMIN\\.nuget\\packages\\": {}
+    "C:\\Users\\Lucas\\.nuget\\packages\\": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\ADMIN\\Documents\\TarefasApi\\TarefasApi\\TarefasApi.csproj",
+      "projectUniqueName": "C:\\Users\\Lucas\\Documents\\GitHub\\BarbeariaSoftware\\TarefasApi.csproj",
       "projectName": "TarefasApi",
-      "projectPath": "C:\\Users\\ADMIN\\Documents\\TarefasApi\\TarefasApi\\TarefasApi.csproj",
-      "packagesPath": "C:\\Users\\ADMIN\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\ADMIN\\Documents\\TarefasApi\\TarefasApi\\obj\\",
+      "projectPath": "C:\\Users\\Lucas\\Documents\\GitHub\\BarbeariaSoftware\\TarefasApi.csproj",
+      "packagesPath": "C:\\Users\\Lucas\\.nuget\\packages\\",
+      "outputPath": "C:\\Users\\Lucas\\Documents\\GitHub\\BarbeariaSoftware\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
-        "C:\\Users\\ADMIN\\AppData\\Roaming\\NuGet\\NuGet.Config"
+        "C:\\Users\\Lucas\\AppData\\Roaming\\NuGet\\NuGet.Config"
       ],
       "originalTargetFrameworks": [
         "net8.0"

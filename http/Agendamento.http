@@ -1,0 +1,28 @@
+POST /BarbeariaContext/Agendamentos
+Content-Type: application/json
+
+{
+    "IdCliente": 1,
+    "IdServico": 1,
+    "IdFuncionario": 1,
+    "DataHoraAgendamento": "2024-05-01T10:00:00",
+    "Observacao": "Cliente prefere o barbeiro João"
+}
+
+GET /BarbeariaContext/Agendamentos
+
+GET /BarbeariaContext/Agendamentos{1}
+
+PUT /BarbeariaContext/Agendamentos/{1}
+Content-Type: application/json
+
+{
+    "IdAgendamento": 1,
+    "IdCliente": 12,
+    "IdServico": 1,
+    "IdFuncionario": 1,
+    "DataHoraAgendamento": "2024-05-01T11:00",
+    "Observacao": "Agendamento remarcado para um horário mais tarde"
+}
+
+DELETE /BarbeariaContext/Agendamentos/{id}
