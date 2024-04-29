@@ -6,4 +6,9 @@ public class Funcionario
     public string? Cargo { get; set; }
     public string? Telefone { get; set; }
     public DateTime DataAdmissao { get; set; }
+
+    public override string ToString()
+    {
+        return $"Id: {IdFuncionario}, Nome: {Nome}, Cargo: {Cargo}, Telefone: {Telefone}";
+    }
 }
