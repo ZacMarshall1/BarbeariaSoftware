@@ -11,4 +11,6 @@ public class Funcionario
     {
         return $"Id: {IdFuncionario}, Nome: {Nome}, Cargo: {Cargo}, Telefone: {Telefone}";
     }
+
+    
 }

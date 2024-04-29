@@ -7,11 +7,11 @@ public static class ClienteApi
 
         group.MapGet("/", async (BarbeariaContext db) =>
         {
-            return await db.Clientes.ToListAsync();
+            return await db.Clientes.ToListAsync();           
         });
 
         group.MapPost("/", async (Cliente cliente, BarbeariaContext db) =>
-        {
+        {            
             db.Clientes.Add(cliente);
             await db.SaveChangesAsync();
             return Results.Created

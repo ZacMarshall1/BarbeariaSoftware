@@ -7,11 +7,13 @@ public static class AgendamentoApi
 
         group.MapGet("/", async (BarbeariaContext db) =>
         {
+            Console.WriteLine("Olá, mundo!");
             return await db.Agendamentos.ToListAsync();
         });
 
         group.MapPost("/", async (Agendamento agendamento, BarbeariaContext db) =>
         {
+            Console.WriteLine("Olá, mundo!");
             db.Agendamentos.Add(agendamento);
             await db.SaveChangesAsync();
             return Results.Created($"/agendamentos/{agendamento.IdAgendamento}", agendamento);

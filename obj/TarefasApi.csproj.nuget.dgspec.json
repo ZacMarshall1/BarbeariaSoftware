@@ -47,9 +47,9 @@
               "target": "Package",
               "version": "[8.0.4, )"
             },
-            "Microsoft.EntityFrameworkCore": {
+            "Microsoft.AspNetCore.Mvc": {
               "target": "Package",
-              "version": "[8.0.4, )"
+              "version": "[2.2.0, )"
             },
             "Microsoft.EntityFrameworkCore.Design": {
               "include": "Runtime, Build, Native, ContentFiles, Analyzers, BuildTransitive",
@@ -61,9 +61,17 @@
               "target": "Package",
               "version": "[8.0.4, )"
             },
-            "Pomelo.EntityFrameworkCore.MySql": {
+            "Microsoft.Extensions.Logging": {
               "target": "Package",
-              "version": "[8.0.2, )"
+              "version": "[8.0.0, )"
+            },
+            "MySql.EntityFrameworkCore": {
+              "target": "Package",
+              "version": "[8.0.0, )"
+            },
+            "Swashbuckle.AspNetCore": {
+              "target": "Package",
+              "version": "[6.5.0, )"
             }
           },
           "imports": [

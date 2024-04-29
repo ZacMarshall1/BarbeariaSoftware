@@ -2,9 +2,10 @@ using Microsoft.EntityFrameworkCore;
 
 class BarbeariaContext : DbContext
 {
-
-    public BarbeariaContext(DbContextOptions<BarbeariaContext> options) : base(options)
+    protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)
     {
+        optionsBuilder.UseMySQL(
+            "server=localhost;port=3306;database=barbearia;user=root;password=1204");
     }
 
     protected override void OnModelCreating(ModelBuilder modelBuilder)
@@ -15,14 +16,12 @@ class BarbeariaContext : DbContext
         modelBuilder.Entity<Funcionario>().HasNoKey();
     }
 
-    protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)
-    {
-        base.OnConfiguring(optionsBuilder);
 
-        string connectionString = "Server=barbearia;Port=3306;Database=barbearia;Uid=root;Pwd=positivo";
-        var serverVersion = new MySqlServerVersion(new Version(8, 0, 26));
-        optionsBuilder.UseMySql(connectionString, serverVersion);
+    public BarbeariaContext(DbContextOptions<BarbeariaContext> options) : base(options)
+    {
     }
+
+
     public DbSet<Servico> Servicos { get; set; }
     public DbSet<Funcionario> Funcionarios { get; set; }
     public DbSet<Cliente> Clientes { get; set; }
