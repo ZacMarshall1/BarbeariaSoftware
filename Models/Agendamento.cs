@@ -1,5 +1,7 @@
+using System.ComponentModel.DataAnnotations;
 public class Agendamento
 {
+    [Key]
     public int IdAgendamento { get; set; }
     public int IdCliente { get; set; }
     public int IdServico { get; set; }

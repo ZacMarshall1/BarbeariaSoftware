@@ -10,11 +10,19 @@ class BarbeariaContext : DbContext
 
     protected override void OnModelCreating(ModelBuilder modelBuilder)
     {
-        modelBuilder.Entity<Agendamento>().HasNoKey();
-        modelBuilder.Entity<Cliente>().HasNoKey();
-        modelBuilder.Entity<Servico>().HasNoKey();
-        modelBuilder.Entity<Funcionario>().HasNoKey();
+        modelBuilder.Entity<Servico>()
+            .HasKey(s => s.IdServico);
+
+        modelBuilder.Entity<Funcionario>()
+            .HasKey(f => f.IdFuncionario);
+
+        modelBuilder.Entity<Cliente>()
+            .HasKey(c => c.IdCliente);
+
+        modelBuilder.Entity<Agendamento>()
+            .HasKey(a => a.IdAgendamento);
     }
+
 
 
     public BarbeariaContext(DbContextOptions<BarbeariaContext> options) : base(options)
@@ -26,4 +34,6 @@ class BarbeariaContext : DbContext
     public DbSet<Funcionario> Funcionarios { get; set; }
     public DbSet<Cliente> Clientes { get; set; }
     public DbSet<Agendamento> Agendamentos { get; set; }
+
+    
 }
